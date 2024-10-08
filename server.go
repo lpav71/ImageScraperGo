@@ -28,8 +28,8 @@ func main() {
 	r.HandleFunc("/", HomeHandler).Methods("GET")
 	r.HandleFunc("/go", GoHandler).Methods("POST")
 	http.Handle("/", r)
-	fmt.Println("Server listening on http://localhost:8080")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Server listening on http://localhost:8081")
+	http.ListenAndServe(":8081", nil)
 }
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
